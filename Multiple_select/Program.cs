@@ -10,6 +10,9 @@ namespace Multiple_select
     {
         static void Main(string[] args)
         {
+            Multiple_select multiple_Select = new Multiple_select();
+            multiple_Select.multipleselect();
+            
         }
     }
 }

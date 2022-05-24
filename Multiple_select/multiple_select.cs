@@ -13,11 +13,15 @@ namespace Multiple_select
     {
         public void multipleselect()
         {
-            IWebDriver Driver = new ChromeDriver();
-            Driver.Navigate().GoToUrl(" https://courses.letskodeit.com/practice");
-            Driver.Manage().Window.Maximize();
+            chrome(" https://courses.letskodeit.com/practice");
             time(2000);
-            IJavaScriptExecutor js = (IJavaScriptExecutor)Driver;
+         
+            Findxpath("//select[@id='multiple-select-example']//option[@value='apple']").Click();
+            time(2000);
+            Findxpath("//select[@id='multiple-select-example']//option[@value='orange']").Click();
+
+            time(2000);
+            
         }
     }
 }
